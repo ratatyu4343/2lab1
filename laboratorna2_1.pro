@@ -7,12 +7,14 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp\
-    qcustomplot.cpp
+    qcustomplot.cpp\
+    tests/unittests.cpp
 
 HEADERS += \
     mainwindow.h \
     tree.h\
-    qcustomplot.h
+    qcustomplot.h\
+    tests/unittests.h
 
 FORMS += \
     mainwindow.ui

@@ -3,7 +3,7 @@
 
 #include <QObject>
 #include <QTest>
-#include <C:\Users\Professional\Documents\GitHub\2lab1\tree.h>
+#include <tree.h>
 
 class UnitTests : public QObject
 {
