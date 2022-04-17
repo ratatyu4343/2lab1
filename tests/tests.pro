@@ -1,3 +1,5 @@
+QT += testlib
+
 HEADERS += \
     unittests.h
 

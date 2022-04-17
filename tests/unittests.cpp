@@ -1,6 +1,6 @@
 #include "unittests.h"
 
-UnitTests::UnitTests()
+UnitTests::UnitTests(QObject *parent)
 {
 
 }
