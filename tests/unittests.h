@@ -11,7 +11,10 @@ class UnitTests : public QObject
 public:
     UnitTests(QObject *parent = 0);
 private slots:
-
+    void insert_node();
+    void delete_node();
+    void min_node();
+    void max_node();
 };
 
 #endif // UNITTESTS_H
