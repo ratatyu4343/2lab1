@@ -5,10 +5,10 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    double arr[] = {-2, -1, 0, 1, 2, 3, 4, 5, 6};
+    double arr[] = {2, 3, 4, 5, 6};
     ui->doubleSpinBox->setValue(0);
     ui->doubleSpinBox_2->setValue(10);
-    tree = new Tree(arr, 9, ui->doubleSpinBox->value(), ui->doubleSpinBox_2->value());
+    tree = new Tree(arr, 5, ui->doubleSpinBox->value(), ui->doubleSpinBox_2->value());
     QWidget *w = new QWidget(this);
     w->setLayout(ui->verticalLayout);
     ui->widget->setInteraction(QCP::iRangeDrag, true);
