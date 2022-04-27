@@ -38,6 +38,12 @@ void UnitTests::min_node()
     double arr[] = {-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     Tree tree(arr, 11, 0, 1);
     QCOMPARE(tree.min_node(), -1);
+    double arr2[] = {1, 1, 1};
+    Tree tree2(arr2, 3, 0, 1);
+    QCOMPARE(tree.min_node(), 1);
+    double arr3[] = {0};
+    Tree tree3(arr3, 1, 0, 1);
+    QCOMPARE(tree.min_node(), 0);
 }
 
 void UnitTests::max_node()
@@ -45,4 +51,10 @@ void UnitTests::max_node()
     double arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 344};
     Tree tree(arr, 11, 0, 1);
     QCOMPARE(tree.max_node(), 344);
+    double arr2[] = {1, 1};
+    Tree tree2(arr2, 2, 0, 1);
+    QCOMPARE(tree.max_node(), 1);
+    double arr3[] = {0};
+    Tree tree3(arr3, 1, 0, 1);
+    QCOMPARE(tree.max_node(), 0);
 }
