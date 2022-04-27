@@ -1,0 +1,5 @@
+Add - push item to the tree
+Delete - remove item from tree
+Interface - the space where interactions between humans and machines occur
+Tree - abstract structure for storing data in the form of a binary tree
+User - a person who uses program
