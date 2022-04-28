@@ -7,6 +7,7 @@
 #include <QDebug>
 #include "time.h"
 #include "tree_node.h"
+#include <chrono>
 using namespace std;
 
 class Tree
@@ -14,11 +15,15 @@ class Tree
 public:
     Tree(double* arr, int n, double _min, double _max)
     {
+        auto start = chrono::high_resolution_clock::now();
         srand(time(0));
         for(int i = 0; i < n; i++)
         {
             insert_node(arr[i], _min, _max);
         }
+        auto end = chrono::high_resolution_clock::now();
+        chrono::duration<float> duration = end - start;
+        qDebug() << "Duration: " << duration.count() << "s";
     }
     void insert_node(double key, double _min, double _max)
     {

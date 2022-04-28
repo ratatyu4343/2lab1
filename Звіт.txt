@@ -1,0 +1,2 @@
+Duration before:  7.1e-06 s
+Duration after: 9.5e-06 s
